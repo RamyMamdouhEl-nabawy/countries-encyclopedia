@@ -1,0 +1,60 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./globalStyles.scss";
+.countries-container {
+  min-height: 100vh;
+  background-color: $veryLightGray;
+
+  &__header {
+    background-color: white;
+    box-shadow: 0 1px 0 3px #f6f6f6;
+  }
+}
+
+.App {
+  text-align: center;
+  font-family: "NunitoSans";
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.dark-mode {
+  background-color: $veryDarkBlue;
+  color: $white;
+
+  .country-header {
+    &__dark-mode {
+      background-color: $darkBlue;
+      box-shadow: 0 1px 0 3px #1f2c35;
+    }
+    &__icon-color {
+      width: max-content;
+      float: right;
+    }
+  }
+}
+
+// .App-header {
+//   background-color: #282c34;
+//   min-height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   font-size: calc(10px + 2vmin);
+//   color: white;
+// }
+
+// .App-link {
+//   color: #61dafb;
+// }
+
+// @keyframes App-logo-spin {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }

@@ -1,25 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import {
+	BrowserRouter as Router, Switch, Route
+} from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMoon } from '@fortawesome/free-regular-svg-icons';
+
+import Home from './components/common/home';
+import CountryInformation from './components/common/countryInformation';
+
+import './App.scss';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [darkMode, setDarkMode] = useState(false);
+	// dark mode switcher.
+	const handleDarkMode = () => {
+		darkMode === true ? setDarkMode(false) : setDarkMode(true);
+	}
+
+	return (
+		<div className={`countries-container ${darkMode === true ? 'dark-mode' : ''}`}>
+			<Router>
+				<div className={`row py-4 g-0 countries-container__header ${darkMode === true ? 'country-header__dark-mode' : ''}`}>
+					<div className="col-6 ps-2 ps-md-4">
+						What in the world?
+					</div>
+					<div className="col-6 pe-2 pe-md-4 text-end">
+						<div onClick={handleDarkMode} className="country-header__icon-color pointer">
+							<FontAwesomeIcon icon={faMoon} className="me-2" />
+							Dark Mode
+						</div>
+					</div>
+				</div>
+
+				<div className="container App">
+					<Switch>
+						<Route exact path="/">
+							<Home />
+						</Route>
+						<Route exact path="/country-details">
+							<CountryInformation />
+						</Route>
+					</Switch>
+				</div>
+			</Router>
+		</div >
+	);
 }
 
 export default App;
