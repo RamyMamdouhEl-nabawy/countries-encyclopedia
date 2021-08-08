@@ -25,7 +25,8 @@
     .country-info {
         &__border-badge {
             width: max-content;
-            color: $white;
+            color: $white !important;
+            font-weight: normal;
             background-color: $darkBlue;
             box-shadow: 0 1px 0 3px #1f2c35;
         }

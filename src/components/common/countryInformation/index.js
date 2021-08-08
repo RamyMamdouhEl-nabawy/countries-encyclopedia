@@ -10,21 +10,25 @@ const CountryInformation = (props) => {
 	const [sideBorders, setSideBorders] = useState([]);
 	const [selectedCountry, setSelectedCountry] = useState(null)
 	const location = useLocation();
+	const countryData = location.state.country;
 
 	useEffect(() => {
 		// Getting selected country information from route location.
-		setSelectedCountry(location.state.country);
-	}, [])
+		setSelectedCountry(countryData);
+	}, [countryData])
 
 	useEffect(() => {
-		const countryBorders = () => {
-			let bordersNames = [];
+		const countryBorders = async () => {
+			const bordersNames = [];
 			if (selectedCountry) {
 				const borders = selectedCountry.borders;
-				borders.map(async (border) => {
+				// Iterating over borders code to get border countries names.
+				for (let index = 0; index < borders.length; index++) {
+					const border = borders[index];
+					// Calling countries borders API to get name.
 					const sideBorder = await Axios.get(`alpha/${border}`);
 					bordersNames.push(sideBorder.data.name)
-				})
+				}
 				setSideBorders(bordersNames);
 			}
 		};
@@ -104,10 +108,9 @@ const CountryInformation = (props) => {
 								<span className="me-2">
 									Border Countries:
 								</span>
-								{/* sideBorders.length !== 0 ?  : <span className="alert alert-warning text-center">No Borders Found</span> */}
-								{sideBorders.map((border, index) => (
+								{sideBorders.length !== 0 ? sideBorders.map((border, index) => (
 									<span key={index} className="badge text-dark country-info__border-badge mx-1">{border}</span>
-								))}
+								)) : <span className="alert-secondary text-center">No Borders Found</span>}
 							</div>
 						</div>
 					</div>
