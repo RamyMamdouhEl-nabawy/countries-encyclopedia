@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './fonts/nunito-sans/NunitoSans-Regular.ttf';
+import './fonts/nunito-sans/NunitoSans-Bold.ttf';
+// import "../node_modules/font-awesome/css/font-awesome.min.css";
+
 
 ReactDOM.render(
   <React.StrictMode>
