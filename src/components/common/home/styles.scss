@@ -1,0 +1,74 @@
+@import "/src/globalStyles.scss";
+
+.country-encyclopedia {
+    &__controls {
+        padding: 0.75rem 0;
+    }
+
+    &__search-box {
+        border: none !important;
+        width: 18rem !important;
+        box-shadow: 1px 1px 0px 3px #f6f6f6;
+    }
+
+    &__country-selector {
+        border: none !important;
+        width: 18rem !important;
+        box-shadow: 1px 1px 0px 3px #f6f6f6;
+    }
+}
+
+.react-select-container,
+.react-select__control {
+    width: 12rem;
+    background-color: $white;
+    border-radius: 0.25rem;
+    border: none;
+    border-color: transparent !important;
+    box-shadow: 1px 1px 0px 3px #f6f6f6;
+}
+
+@media screen and (min-width: 768px) {
+    // .react-select-container,
+    .react-select__control {
+        float: right;
+    }
+}
+
+.dark-mode {
+    .country-encyclopedia {
+        &__search-box,
+        &__search-box:active,
+        &__search-box:focus {
+            color: $white;
+            background-color: $darkBlue;
+            box-shadow: 0 1px 0 3px #1f2c35;
+        }
+
+        &__search-box::after {
+            content: "f002";
+            color: #1f2c35;
+        }
+
+        &__country-selector {
+            color: $white;
+            background-color: $darkBlue;
+            box-shadow: 0 1px 0 3px #1f2c35;
+        }
+    }
+
+    .react-select__control,
+    .react-select__menu {
+        color: $white;
+        border: none;
+        background-color: $darkBlue;
+        box-shadow: 0 1px 0 3px #1f2c35;
+    }
+    .react-select__single-value {
+        color: white;
+    }
+    .react-select__option:hover {
+        background-color: $darkBlue;
+        opacity: 0.3;
+    }
+}
