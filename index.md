@@ -1,37 +1,36 @@
-## Welcome to GitHub Pages
+# Countries encyclopedia
 
-You can use the [editor on GitHub](https://github.com/RamyMamdouhEl-nabawy/countries-encyclopedia/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+### This Application was implemented to help providing informations regarding countries their:
+Capital
+Population
+Region
+Language
+Currencies
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Getting project into your machine.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### 1- Create a folder in your machine for holding application:
+- mkdir [folder-name]
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+### 2- Clone repository from GitHub:
+- $git clone ['https://github.com/RamyMamdouhEl-nabawy/countries-encyclopedia.git']
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+### 3- Get into project folder:
+- cd [folder-name]
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+### 4- For installing application packages for development run:
+- npm i or npm install
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+### 5- for starting application run:
+- npm run start
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/RamyMamdouhEl-nabawy/countries-encyclopedia/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+### 6- App running at:
+- Local:   http://localhost:8080/
+- Network: http://192.168.1.6:8080/
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
