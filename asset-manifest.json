@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/countries-encyclopedia/static/css/main.f6fed13e.chunk.css",
+    "main.js": "/countries-encyclopedia/static/js/main.78ffb490.chunk.js",
+    "main.js.map": "/countries-encyclopedia/static/js/main.78ffb490.chunk.js.map",
+    "runtime-main.js": "/countries-encyclopedia/static/js/runtime-main.c3f525c2.js",
+    "runtime-main.js.map": "/countries-encyclopedia/static/js/runtime-main.c3f525c2.js.map",
+    "static/js/2.36572089.chunk.js": "/countries-encyclopedia/static/js/2.36572089.chunk.js",
+    "static/js/2.36572089.chunk.js.map": "/countries-encyclopedia/static/js/2.36572089.chunk.js.map",
+    "static/js/3.67de2288.chunk.js": "/countries-encyclopedia/static/js/3.67de2288.chunk.js",
+    "static/js/3.67de2288.chunk.js.map": "/countries-encyclopedia/static/js/3.67de2288.chunk.js.map",
+    "index.html": "/countries-encyclopedia/index.html",
+    "static/css/main.f6fed13e.chunk.css.map": "/countries-encyclopedia/static/css/main.f6fed13e.chunk.css.map",
+    "static/js/2.36572089.chunk.js.LICENSE.txt": "/countries-encyclopedia/static/js/2.36572089.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/countries-encyclopedia/static/media/NunitoSans-Regular.87d92665.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c3f525c2.js",
+    "static/js/2.36572089.chunk.js",
+    "static/css/main.f6fed13e.chunk.css",
+    "static/js/main.78ffb490.chunk.js"
+  ]
+}
