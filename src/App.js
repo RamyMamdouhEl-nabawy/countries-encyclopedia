@@ -34,10 +34,10 @@ function App() {
 
 				<div className="container App">
 					<Switch>
-						<Route exact path="/">
+						<Route exact path="/countries-encyclopedia/">
 							<Home />
 						</Route>
-						<Route exact path="/country-details">
+						<Route exact path="/countries-encyclopedia/country-details">
 							<CountryInformation />
 						</Route>
 					</Switch>
